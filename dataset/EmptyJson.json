@@ -1,0 +1,21 @@
+{
+	"name": "EmptyJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsadlsgen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "empty.json",
+				"folderPath": "Moniter/Emptyjson",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

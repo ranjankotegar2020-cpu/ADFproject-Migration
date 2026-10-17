@@ -1,0 +1,21 @@
+{
+	"name": "Json_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsadlsgen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "gitfile.json",
+				"folderPath": "onprem",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
